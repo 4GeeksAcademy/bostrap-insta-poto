@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="cabecera">
+            <!--<div class="container">-->
+            <!-- navbar start -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-start d-flex align-items-center flex-wrap">
+                        <i class="fa-brands fa-instagram fs-3"></i>
+                        <a class="navbar-brand" href="#">Instagram</a>
+                    </div>
+                    <!-- start modal -->
+                    <div d-flex justify-content-end>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Create a new post
+                        </button>
+
+                        <!-- Modal -->
+
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post:
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Caption:</p>
+                                        <form>
+                                            <label for="imagen" class="from-label">imagen</label>
+                                            <input type="file" name="imagen" class="from-control"
+                                                placeholder="subir imagen">
+                                            <div class="d-flex mt-2" style="font-size: 20px;">
+                                                <i class="fa-solid fa-camera"></i>
+                                                <i class="fa-solid fa-location-dot ms-1"></i>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-sm-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li><a class="dropdown-item border-top border-1 border-black text-danger" href="#">Log
+                                        out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <div class="cuerpo">
+            <div class="d-flex justify-content-center">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content container-fluid" id="myTabContent">
+                <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row mx-auto">
+                        <div class="object-fit-cover mt-2 col-12 col-lg-4 col-md-6 justify-content-center">
+                            <img class="w-100 h-100" src="imgs/minion mamado.jpg">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img src="imgs/el skibidi profesor.jpg" class="w-100 h-100">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img class="w-100 h-100" src="imgs/minion duro.jpg">
+                        </div>
+
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 object-fit-cover justify-content-center ">
+                            <img class="w-100 h-100" src="imgs/minion mamado.jpg">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img src="imgs/el skibidi profesor.jpg" class="w-100 h-100">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img class="w-100 h-100" src="imgs/minion duro.jpg">
+                        </div>
+
+                        <div class="col-12 mt-2 object-fit-cover col-lg-4 col-md-6 justify-content-center ">
+                            <img class="w-100 h-100" src="imgs/minion mamado.jpg">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img src="imgs/el skibidi profesor.jpg" class="w-100 h-100">
+                        </div>
+
+                        <div class="col-12 mt-2 col-md-6 col-lg-4 justify-content-center ">
+                            <img class="w-100 h-100" src="imgs/minion duro.jpg">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="card row mt-3 mx-auto border border-secondary"
+                        style="width: 550px; background-color: white;">
+                        <div class="card-body d-flex justify-content-between mx-auto"
+                            style="height: 50px; width: 550px;">
+                            <h5 class="card-title">Mi skibidi profesor</h5>
+                            <p>2/26</p>
+                        </div>
+                        <img src="imgs/el skibidi profesor.jpg" style="width: 550px;" class="mx-auto card-img-bottom">
+                        <div class="card-body" style="height: 125px; width: 550px;">
+                            <p class="ms-2"><strong>2020 LIKES</strong></p>
+                            <p class="card-text ms-2"> El es mi skibidi profesor me enseña skibidi programacion con
+                                mucha skibidi pasion.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3 mx-auto border border-secondary"
+                        style="width: 550px; background-color: white;">
+                        <div class="card-body d-flex justify-content-between mx-auto"
+                            style="height: 50px; width: 550px;">
+                            <h5 class="card-title">Yo programando</h5>
+                            <p>4/26</p>
+                        </div>
+                        <img src="imgs/minion duro.jpg" style="width: 550px;" class="mx-auto card-img-bottom">
+                        <div class="card-body" style="height: 125px; width: 550px;">
+                            <p class="ms-2"><strong>5020 LIKES</strong></p>
+                            <p class="card-text ms-2"> Este soy yo haciendo esta skibidi pagina con mucho skibidi
+                                amor verdadero.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3 mx-auto border border-secondary"
+                        style="width: 550px; background-color: white;">
+                        <div class="card-body d-flex justify-content-between mx-auto"
+                            style="height: 50px; width: 550px;">
+                            <h5 class="card-title">En el skibidi gym</h5>
+                            <p>6/26</p>
+                        </div>
+                        <img src="imgs/minion mamado.jpg" style="width: 550px;" class="mx-auto card-img-bottom">
+                        <div class="card-body" style="height: 125px; width: 550px;">
+                            <p class="ms-2"><strong>15020 LIKES</strong></p>
+                            <p class="card-text ms-2"> Este soy yo haciendo esta skibidi poses muy sexys en el gym
+                                para las skibidi nenas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
